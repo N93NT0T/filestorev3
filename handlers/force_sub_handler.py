@@ -47,13 +47,14 @@ async def handle_force_sub(bot: Client, cmd: Message):
             chat_id=cmd.from_user.id,
             text="**Please Join My Updates Channel to use this Bot!**\n\n"
                  "Due to Overload, Only Channel Subscribers can use the Bot!",
-            reply_markup=InlineKeyboardMarkup(
+            urel = "https://t.me/{Config.BOT_USERNAME}?start={message.command[1]}" 
+reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
                     ],
                     [
-                        InlineKeyboardButton("🔄 Refresh 🔄", url='https://t.me/{Config.BOT_USERNAME}?start={message.command[1]}')
+                        InlineKeyboardButton("🔄 Refresh 🔄", url='urel')
                     ]
                 ]
             ),
