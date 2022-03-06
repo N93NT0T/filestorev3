@@ -54,7 +54,7 @@ reply_markup=InlineKeyboardMarkup(
                         InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
                     ],
                     [
-                        InlineKeyboardButton("🔄 Refresh 🔄", url='urel')
+                        InlineKeyboardButton("🔄 Refresh 🔄", url="https://t.me/{Config.BOT_USERNAME}?start=AbirHasan2005_{message.command[1]}")
                     ]
                 ]
             ),
